@@ -1,0 +1,147 @@
+.cut2 {
+  background-image: url(../img/index_02.jpg);
+  height: 49.7vw;
+  padding-top: 1.5vw;
+  @include mobile {
+    background-image: url(../img/index_02-m.jpg);
+    height: 64vw;
+  }
+}
+// .video-box {
+//   position: relative;
+//   width: 100%;
+//   height: 0;
+//   border: 1vw solid #e1b95e;
+//   border-radius: 2%;
+//   padding-bottom: 56.25%;
+// }
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+// /* 修改视频播放器的外观 */
+// iframe[src*="youtube.com"] {
+//   border: none;
+//   box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px 0px;
+//   border-radius: 2vw;
+//   border: 1vw solid #e1b95e;
+// }
+
+.hide {
+  display: none;
+}
+
+#g-video {
+  margin: 0x.6rem auto 0;
+  background: #e1b95e;
+  padding: 0.5rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  iframe {
+    border-radius: 1rem;
+  }
+  .img {
+    border-radius: 1rem;
+  }
+
+.video-wrap {
+  margin: 0 0;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.5%;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-wrap .img {
+  position: absolute;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.video-wrap .img:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/video.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+.video-wrap .img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 0.5s;
+}
+.video-wrap .img .video-btn-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2rem 0 0 -2rem;
+  z-index: 2;
+}
+.video-wrap p {
+  font-size: 15px;
+}
+.video-wrap.is-active .img {
+  opacity: 0;
+  visibility: hidden;
+}
+.video-wrap:hover .img:after {
+  transform: scale(1.1);
+}
+.video-wrap:hover .img:before {
+  opacity: 0;
+}
+.video-wrap:hover .video-btn-play:before {
+  border: 2rem solid #fff;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+.video-wrap:hover .video-btn-play:after {
+  transform: translate(-50%, -50%) scale(1.2);
+  border-color: transparent transparent transparent #e1b95e;
+}
+
+.video-btn-play {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.video-btn-play:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2rem 0 2rem 3rem;
+  border-color: transparent transparent transparent #e1b95e;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+}

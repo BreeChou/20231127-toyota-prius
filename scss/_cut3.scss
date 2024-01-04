@@ -1,0 +1,176 @@
+.cut3 {
+  background-image: url(../img/index_03.jpg);
+  height: 47.3vw;
+  padding-top: 1.5vw;
+  overflow: hidden;
+  @include mobile {
+    background-image: url(../img/index_03-m.jpg);
+    height: 95.48vw;
+    padding-top: 0vw;
+  }
+  .txt {
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    @include mobile {
+      width: 100%;
+      text-align: left;
+      // margin-left: 5vw;
+    }
+    .catch {
+      color: #fff;
+      margin-top: 8vw;
+      flex-direction: column;
+      text-align: center;
+      // background: #000;
+      margin-bottom: 7vw;
+      &::after {
+        content: "";
+        position: absolute;
+      }
+      @include mobile {
+        margin-top: 1vw;
+        text-align: center;
+        margin-bottom: 3vw;
+      }
+      h2 {
+        transform: scaleY(0.8);
+        letter-spacing: 2vw;
+        margin-right: -2vw;
+        @include mobile {
+          // display: inline-block;
+          font-size: 9vw;
+          vertical-align: top;
+          // margin-right: 1vw;
+        }
+      }
+      h3 {
+        color: #fff;
+        letter-spacing: 1.3vw;
+        position: relative;
+        font-weight: 700;
+        // margin-right: -1.3vw;
+        margin: 1.8vw 0;
+        @include mobile {
+          // display: inline-block;
+          font-size: 6vw;
+          // margin-right: 0vw;
+        }
+      }
+      p {
+        transform: scaleY(0.8);
+        // font-family:'toyotaType';
+        font-weight: 700;
+        @include mobile {
+          font-size: 7.5vw;
+          // top: 16vw;
+          // left: 30vw;
+          // position: absolute;
+          .fz-16 {
+            font-size: 3.5vw;
+          }
+        }
+        sup {
+          font-size: 20%;
+          vertical-align: 2vw;
+          margin-left: -1vw;
+          @include mobile {
+            font-size: 1.5vw;
+            vertical-align: 4vw;
+            margin-left: -2vw;
+          }
+        }
+      }
+    }
+    .fz-30 {
+      letter-spacing: 1.3vw;
+      line-height: 2;
+      margin-right: -1.3vw;
+      @include mobile {
+        font-size: 4.3vw;
+        line-height: 1.5;
+        margin-top: 0vw;
+        text-align: center;
+        letter-spacing: .3vw;
+        // margin-right: 1.3vw;
+      }
+    }
+  }
+  .mask-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    padding-top: 7vw;
+    height: 50vw;
+    top: -35vw;
+    left: 37vw;
+    // background: #000;
+    overflow: hidden;
+    @include mobile {
+      display: block;
+      top: 2vw;
+      left: 0vw;
+    }
+    .mask {
+      position: absolute;
+      width: 100%;
+      mask-image: linear-gradient(to right, transparent, #000 30%);
+      transform: rotate(-15deg);
+      top: 2vw;
+      left: 2vw;
+    }
+    .mask {
+      mask-image: linear-gradient(to right, transparent, #000 30%);
+      transform: rotate(-8deg);
+
+      @include mobile {
+        top: 7vw;
+        left: 6vw;
+        transform: rotate(-7deg);
+      }
+    }
+  }
+
+  .photos {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    animation: photo_scrollshow 20s linear infinite;
+
+    @keyframes photo_scrollshow {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-97.5vw);
+        @include mobile {
+          transform: translateX(-106.5vw);
+        }
+      }
+    }
+
+    > div {
+      width: 32.5vw;
+      height: 35vw;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include mobile {
+        width: 35.5vw;
+        height: 43vw;
+      }
+
+      &.photo-1 {
+        background-image: url(../img/film1.png);
+      }
+
+      &.photo-2 {
+        background-image: url(../img/film2.png);
+      }
+
+      &.photo-3 {
+        background-image: url(../img/film3.png);
+      }
+    }
+  }
+}

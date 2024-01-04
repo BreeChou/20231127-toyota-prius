@@ -1,0 +1,58 @@
+
+#g-loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at center, white 36%, #c6c6c6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+  z-index: 10;
+}
+#g-loader .center {
+  width: 100%;
+  height: 150px;
+  color: #000;
+}
+#g-loader .center p {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin: 15px 0;
+}
+#g-loader .center .bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  position: relative;
+}
+#g-loader .center .bar .move {
+  width: 20%;
+  height: 5px;
+  background-color: #e7211b;
+  position: absolute;
+  animation: bar-move 0.5s ease infinite;
+}
+@keyframes bar-move {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+  50% {
+    left: 40%;
+    width: 20%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+#g-loader.is-loaded {
+  opacity: 0;
+  visibility: hidden;
+}

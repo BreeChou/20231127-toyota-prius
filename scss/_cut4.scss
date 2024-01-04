@@ -1,0 +1,181 @@
+.cut4 {
+  background-image: url(../img/index_04.jpg);
+  height: 102.29vw;
+  padding-top: 5vw;
+  @include mobile {
+    background-image: url(../img/index_04-m.jpg);
+    height: 289vw;
+    background-size: 100% 290vw;
+    padding-top: 0vw;
+  }
+  .img-car2 {
+    position: absolute;
+    width: 47.55vw;
+    margin-top: 5vw;
+    margin-left: -1vw;
+    @include mobile {
+      margin-top: 100vw;
+      width: 80vw;
+    }
+  }
+  .content {
+    .catch {
+      color: #fff;
+      text-align: center;
+      float: right;
+      width: 50%;
+      margin-bottom: 8vw;
+      @include mobile {
+        display: flex;
+        width: 100%;
+        // text-align: left;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8vw;
+        text-align: center;
+      }
+
+      img {
+        width: 16.41vw;
+        height: 14.22vw;
+        margin-bottom: 1vw;
+        @include mobile {
+          width: 34.461vw;
+          height: 29.862vw;
+        }
+      }
+      .catch-txt {
+        .fz-113 {
+          font-weight: 700;
+          font-family: "toyotaType";
+          letter-spacing: 0.5vw;
+          transform: scaleY(0.8);
+          @include mobile {
+            font-size: 9vw;
+          }
+        }
+        .fz-55 {
+          font-weight: 700;
+          font-family: "toyotaType";
+          transform: scaleY(0.8);
+          letter-spacing: 0.3vw;
+          margin: 0.3vw 0 2vw 0;
+          @include mobile {
+            font-size: 5vw;
+            margin: 0.2vw 0 3vw 0;
+          }
+        }
+        .fz-30 {
+          letter-spacing: 0.7vw;
+          line-height: 1.5;
+          position: relative;
+          .fz-40 {
+            letter-spacing: 0vw;
+            margin-right: 0.7vw;
+            font-weight: 700;
+            transform: scaleX(1.2);
+          }
+          @include mobile {
+            font-size: 4.3vw;
+            line-height: 1.4;
+            .fz-40 {
+              margin-right: 0.7vw;
+              font-weight: 700;
+              font-size: 4vw;
+            }
+          }
+          sup {
+            font-size: 50%;
+            margin-left: -0.2vw;
+            letter-spacing: 0.05vw;
+            vertical-align: 0.6vw;
+            
+            @include mobile {
+              font-size: 45%;
+              vertical-align: 1.5vw;
+            }
+            
+          }
+          .point-position {
+            position: absolute;
+            top: 9vw;
+            @include mobile {
+              right: -5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+  .safety-icons {
+    color: #fff;
+    gap: 4vw;
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 0vw;
+      row-gap: 0vw;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+    li {
+      @include mobile {
+        width: 20vw;
+      }
+      .pt-2 {
+        padding: 2vw 0;
+      }
+      .pt-1 {
+        padding: 1vw 0;
+      }
+      p {
+        text-align: center;
+        line-height: 1.3;
+        letter-spacing: 0.2vw;
+        text-shadow: 0 0.5vw 1vw #000;
+        span {
+          font-size: 1.09vw;
+        }
+        @include mobile {
+          font-size: 3vw;
+          span {
+            font-size: 2.1vw;
+          }
+        }
+      }
+    }
+    .icon-pcs {
+      @include mobile {
+        transform: translateX(33.5vw);
+      }
+    }
+  }
+  .notion {
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 4vw;
+    li {
+      margin-bottom: 1vw;
+      .notion-num {
+        &::before {
+          content: "*";
+        }
+      }
+    }
+    @include mobile {
+      font-weight: 400;
+      font-size: 3vw;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 35vw;
+      line-height: 1.5;
+      li {
+        margin-bottom: 1.5vw;
+      }
+    }
+  }
+  
+}

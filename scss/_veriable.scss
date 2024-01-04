@@ -1,0 +1,159 @@
+// RWD
+@mixin mobile {
+  @media (max-width: 900px) {
+    //要記得寫 @content
+    @content;
+  }
+}
+
+
+.container-1400 {
+  max-width: 1400px;
+  width: 72.92vw;
+  margin: 0 auto;
+  @include mobile {
+    width: 90%;
+  }
+}
+.container-1730 {
+  max-width: 1730px;
+  width: 90.1vw;
+  margin: 0 auto;
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.d-f {
+  display: flex;
+}
+.mb-hidden {
+  @include mobile{
+    display: none;
+  }
+  
+}
+.pc-break {
+  display: block;
+  @include mobile{
+    display: none;
+  }
+}
+.mb-break {
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+// color
+$color-bk: #000;
+
+.color-bk {
+  color: $color-bk;
+}
+.light-brown {
+  background: #654d1f;
+}
+.deep-brown {
+  background: #3f3323;
+}
+.type-k {
+  font-family: "kohinoorBangla";
+}
+.title {
+  color: #fff;
+}
+.color-text-gradient-gray {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(221, 221, 221),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+}
+.color-text-gradient-gold {
+  background-image: linear-gradient(
+    to bottom right,
+    #d2b06e,
+    #f1e5c6,
+    #d2b06e,
+    #f1e5c6,
+    #d2b06e
+  );
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+}
+.red-blue-shadow {
+  text-shadow: 0.3vw 0px .2vw #18659a, -0.3vw 0px .2vw #ff0000c4;
+  @include mobile {
+    text-shadow: .5vw 0px .2vw #18659a, -0.5vw 0px 0.2vw #ff0000c4;
+  }
+}
+.yellow-blue-shadow {
+  text-shadow: 0.3vw 0px .2vw #6fabd4, -0.3vw 0px .2vw #dd8419;
+  @include mobile {
+    text-shadow: .5vw 0px .2vw #6fabd4, -0.5vw 0px 0.2vw #dd8419;
+  }
+}
+//font-size
+
+h2 {
+  font-size: 3.54vw;
+}
+h3 {
+  font-size: 2.08vw;
+}
+.fz-40 {
+  font-size: 2.08vw;
+}
+.fz-32 {
+  font-size: 1.67vw;
+}
+.fz-80 {
+  font-size: 4.17vw;
+}
+.fz-164 {
+  font-size: 8.54vw;
+}
+.fz-28 {
+  font-size: 1.46vw;
+}
+.fz-113 {
+font-size: 5.89vw;
+}
+.fz-55 {
+  font-size: 2.86vw;
+}
+.fz-16 {
+  font-size: 0.83vw;
+}
+.fz-18 {
+  font-size: 0.95vw;
+}
+small {
+  font-size: 0.83vw;
+}
+.fz-54 {
+  font-size: 2.81vw;
+}
+.fz-30 {
+  font-size: 1.56vw;
+}
+.fz-63 {
+  font-size: 3.28vw;
+}
+
+//  background-reset
+.bg-set {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}

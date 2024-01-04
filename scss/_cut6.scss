@@ -1,0 +1,121 @@
+.cut6 {
+  // background: #79d2fe7a;
+  padding-top: 14vw;
+  // height: 20vw;
+  @include mobile {
+    padding-top: 40vw;
+  }
+  .container-1400 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .cta {
+    // margin-top: 2vw;
+    margin-bottom: 4vw;
+    position: relative;
+    @include mobile {
+    }
+    .cta-car {
+      position: absolute;
+      width: 27vw;
+      height: 10vw;
+      background-image: url(../img/icon-cta-car.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: -11vw;
+      left: 2vw;
+      z-index: 1;
+      @include mobile {
+        width: 60vw;
+        height: 20vw;
+        top: -23vw;
+        left: 2vw;
+      }
+    }
+    .fz-32 {
+      padding: 2vw 3vw;
+      @include mobile {
+        font-size: 4vw;
+        padding: 4vw 6vw;
+      }
+    }
+    a {
+      border-radius: 1vw;
+      letter-spacing: 1.2vw;
+      font-weight: 700;
+      color: #fff;
+      position: relative;
+
+      span {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        letter-spacing: 0vw;
+      }
+
+      i {
+        display: inline-block;
+        background-size: cover;
+        width: 1vw;
+        height: 1vw;
+        background-image: url(../img/icon-arrow.png);
+        @include mobile {
+          width: 3vw;
+          height: 3vw;
+        }
+      }
+    }
+  }
+
+  .notion {
+    color: #000;
+    line-height: 1.5;
+    margin-top: 2vw;
+    
+
+    li {
+      margin-bottom: 1vw;
+      .notion-num {
+        &::before {
+          content: "**";
+        }
+      }
+    }
+    @include mobile {
+      font-size: 3vw;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20vw;
+      @include mobile {
+        margin-top: 8vw;
+      }
+      li {
+        margin-bottom: 0.5vw;
+      }
+    }
+  }
+  .notion-1 {
+    align-self: start;
+    line-height: 1;
+    @include mobile {
+      line-height: 1.4;
+      margin-top: 5vw;
+    }
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 2vw;
+  padding: 2vw 0;
+  color: #d89c15;
+  font-size: 0.95vw;
+  @include mobile {
+    font-size: 2.5vw;
+    padding: 4vw 0;
+    margin-top: 8vw;
+  }
+}

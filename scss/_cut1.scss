@@ -1,0 +1,218 @@
+.cut1 {
+  background-image: url(../img/index_01.jpg);
+  height: 46.3vw;
+  padding-top: 1.5vw;
+  @include mobile {
+    background-image: url(../img/index_01-m.jpg);
+    height: 130.7vw;
+    background-position-y: -38vw;
+    padding-top: 6.5vw;
+  }
+}
+
+.img-car {
+  position: absolute;
+  top: 46.7%;
+  left: 7%;
+  width: 51.64vw;
+  @include mobile {
+    transform: scale(1.5);
+    top: 72%;
+    left: 25%;
+  }
+}
+.img-tag {
+  position: absolute;
+  width: 10.31vw;
+  height: 14.43vw;
+  // background: #000;
+  background-image: url(../img/icon-tag.png);
+  background-size: cover;
+  top: 8vw;
+  left: 44vw;
+  @include mobile {
+    transform: scale(2);
+    top: 35vw;
+    left: 75vw;
+  }
+}
+.toyota-logo a {
+  background-image: url("../img/toyta-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9.74vw;
+  height: 1.67vw;
+  text-decoration: none;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  @include mobile {
+    width: 24.9vw;
+    height: 4.63vw;
+    margin-bottom: 8vw;
+  }
+}
+
+.cut1 {
+  .catch-and-sub {
+    justify-content: space-between;
+    width: 100%;
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0 auto;
+      width: 80%;
+      // background: #00000049;
+    }
+    // background: #19b1e48d;
+    .sub {
+      transform: translate(16vw, 7vw);
+      font-weight: 700;
+      justify-content: space-between;
+      width: 20.35vw;
+      left: 20.5vw;
+      top: 10vw;
+      .fz-80 {
+        letter-spacing: 0.5vw;
+        line-height: 1.1;
+        // text-shadow: 0 0 1.5vw #696969;
+        // position: relative;
+        .shadow-new {
+          &::before {
+            content: attr(text);
+            position: absolute;
+            z-index: -1;
+            text-shadow: 0 0px 1vw #00000071;
+          }
+        }
+        .shadow-limit {
+          &::before {
+            content: attr(text);
+            position: absolute;
+            z-index: -1;
+            text-shadow: 0 0px 1vw #00000071;
+          }
+        }
+      }
+      .fz-32 {
+        letter-spacing: 0.1vw;
+        padding-left: 0.5vw;
+        small {
+          margin-left: 1vw;
+          letter-spacing: 0.2vw;
+        }
+      }
+      .fz-164 {
+        position: relative;
+        .shadow-twenty {
+          &::before {
+            content: attr(data-num);
+            position: absolute;
+            z-index: -1;
+            text-shadow: 0 0px 1vw #00000071;
+          }
+        }
+      }
+      .fz-54 {
+        position: absolute;
+        left: 8vw;
+        top: 4.5vw;
+        color: #fff;
+        text-shadow: 0 0px 1vw #00000071;
+      }
+      @include mobile {
+        transform: translate(0vw, 5vw);
+        left: 0vw;
+        top: 0vw;
+        width: 55%;
+        .fz-80 {
+          font-size: 8.17vw;
+        }
+        .fz-32 {
+          font-size: 3.5vw;
+          small {
+            margin-left: 1vw;
+            letter-spacing: 0.2vw;
+            font-size: 2vw;
+          }
+        }
+        .fz-164 {
+          font-size: 15.54vw;
+        }
+        .fz-54 {
+          font-size: 4.81vw;
+          left: 15vw;
+          top: 8.5vw;
+        }
+        .fz-164 {
+          font-size: 15.54vw;
+        }
+      }
+    }
+    .catch {
+      transform: translate(0vw, 9vw);
+      text-align: center;
+      // background: #b16767a8;
+      width: 36vw;
+      margin-right: 0;
+      img {
+        width: 36vw;
+        height: 1.56vw;
+        @include mobile {
+          width: 72vw;
+          height: 3.12vw;
+        }
+      }
+      h3 {
+        margin-top: 3.5vw;
+        margin-bottom: 4vw;
+        letter-spacing: 0.5vw;
+        font-weight: 400;
+        sup {
+          font-size: 50%;
+          letter-spacing: 0vw;
+          vertical-align: 0.9vw;
+          margin-left: -0.5vw;
+          @include mobile {
+            vertical-align: 1.8vw;
+            font-size: 40%;
+          }
+        }
+      }
+      h2 {
+        line-height: 1.3;
+        letter-spacing: 2vw;
+        font-weight: 700;
+      }
+      @include mobile {
+        width: 100%;
+        transform: translate(0vw, 0vw);
+        h3 {
+          font-size: 4.08vw;
+          margin-top: 6.5vw;
+          margin-bottom: 5vw;
+        }
+        h2 {
+          font-size: 7.54vw;
+        }
+      }
+    }
+  }
+  .tag-txt {
+    padding: 2vw;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    // text-shadow: 0 0 .5vw grey;
+    .fz-16,
+    .fz-28 {
+      text-shadow: 0 0 0.8vw rgb(50, 4, 4);
+    }
+    .fz-40 {
+      // position: relative
+      z-index: 4;
+    }
+  }
+}
